@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ar" style="direction: rtl;">
+
+<head>
+    <meta charset="utf-8" />
+    <title> WashSquad </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesdesign" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- jvectormap -->
+    <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Plugins css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-sidebar="dark">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <!-- ==========  Header  ========== -->
+        <section id="MainHeader"></section>
+        <!-- ==========  Sidebar  ========== -->
+        <section id="MainSidebar"></section>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content   ">
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap justify-content-end mb-3">
+                        <div class="p-2">
+                            <select class="form-select shadow-lg">
+                                <option selected> January </option>
+                                <option value="1"> February </option>
+                                <option value="2"> March </option>
+                                <option value="3"> April </option>
+                            </select>
+                        </div>
+                        <div class="p-2">
+                            <select class="form-select shadow-lg">
+                                <option selected>2022</option>
+                                <option value="1">2021</option>
+                                <option value="2">2020</option>
+                                <option value="3">2019</option>
+                            </select>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn  exportExcel"> <i class="fas fa-download me-2"></i> Export Excel
+                            </button>
+                        </div>
+                    </div>
+                    <div class="burn">
+                        <h3 class="fw-bold mb-4">
+                            الرواتب
+                        </h3>
+                        <div class="table-responsive mb-0 rounded">
+                            <table id="datatable-buttons" class="table dt-responsive nowrap">
+                                <thead>
+                                    <tr>
+                                        <th> التاريخ </th>
+                                        <th> إسم الموظف </th>
+                                        <th> الراتب الشهري </th>
+                                        <th> الخصومات </th>
+                                        <th> السلفة </th>
+                                        <th> الغياب </th>
+                                        <th> العمولة </th>
+                                        <th> الإجمالي </th>
+                                        <th> تم تحويل الراتب </th>
+                                        <th> إرفاق الفاتورة </th>
+                                        <th> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1 / 2 /2022 </td>
+                                        <td> بكري </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td style="vertical-align: middle; color: green; font-size: 18px;"> <i
+                                                class="fas fa-check-circle"></i> </td>
+                                        <td> <input class="form-control" type="file" id="" value=""> </td>
+                                        <td> <button class="stoped"><i class=" far fa-file-alt me-1"></i> عرض
+                                                السجل </button> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1 / 2 /2022 </td>
+                                        <td> بكري </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <select class="form-select" name="" id="">
+                                                <option value="" disabled> إختيار </option>
+                                                <option value=""> تم التحويل </option>
+                                                <option value=""> لم يتم التحويل </option>
+                                            </select> </td>
+                                        <td> <input class="form-control" type="file" id="" value=""> </td>
+                                        <td> <button class="stoped"><i class=" far fa-file-alt me-1"></i> عرض
+                                                السجل </button> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="fw-bold mb-4">
+                            العمولات
+                        </h3>
+                        <div class="table-responsive mb-0 rounded">
+                            <table id="datatable-buttons" class="table dt-responsive nowrap">
+                                <thead>
+                                    <tr>
+                                        <th> التاريخ </th>
+                                        <th> إسم الموظف </th>
+                                        <th> الإيرادات المحققة </th>
+                                        <th> عدد الطلبات تمت </th>
+                                        <th> الطلبات الملغية من السائق </th>
+                                        <th> عمولة الطلبات </th>
+                                        <th> التقييم </th>
+                                        <th> عمولة الجودة </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1 / 2 /2022 </td>
+                                        <td> شاجو </td>
+                                        <td> 7500 </td>
+                                        <td> 250 </td>
+                                        <td> 10 </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <i class="fas fa-star  " style="color:gold"></i> 5X </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1 / 2 /2022 </td>
+                                        <td> شاجو </td>
+                                        <td> 7500 </td>
+                                        <td> 250 </td>
+                                        <td> 10 </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                        <td> <i class="fas fa-star  " style="color:gold"></i> 5X </td>
+                                        <td> <input class="form-control" type="number" id="" value=""
+                                                placeholder="2500"> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+                <h5 class="m-0 me-2">Settings</h5>
+                <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
+            </div>
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
+            <div class="p-4">
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-1.png" class="img-thumbnail" alt="layout-1">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                </div>
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-2.png" class="img-thumbnail" alt="layout-2">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch"
+                        data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
+                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                </div>
+                <div class="mb-2">
+                    <img src="assets/images/layouts/layout-3.png" class="img-thumbnail" alt="layout-3">
+                </div>
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch"
+                        data-appStyle="assets/css/app-rtl.min.css">
+                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                </div>
+            </div>
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <!-- apexcharts js -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- jquery.vectormap map -->
+    <script src="assets/libs/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/libs/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
+    <!-- dropzone js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+    <script src="assets/js/pages/table-editable.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $('#MainHeader').load('header.html');
+        $('#MainSidebar').load('sidebar.html');
+    </script>
+    <script>
+        $('#r').DataTable();
+    </script>
+</body>
+
+</html>
