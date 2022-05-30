@@ -5,7 +5,11 @@ Version: 1.1.0
 Contact: themesdesign.in@gmail.com
 File: Main Css File
 */
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@200;300;400;600;700&display=swap");
+@font-face {
+  font-family: cairo;
+  src: url(../fonts/cairo-regular.ttf);
+}
+
 h2,
 h3,
 h4,
@@ -14,8 +18,8 @@ h6 {
   font-family: unset !important;
 }
 
-body {
-  font-family: "Almarai";
+* {
+  font-family: "cairo";
 }
 
 #page-topbar {
@@ -31,19 +35,19 @@ body {
 
 ::-webkit-scrollbar {
   background-color: #ddd;
-  width: 10px;
+  width: 8px;
 }
 
 /* ::-webkit-scrollbar-track {
   background-color: $mainColor;
 } */
 ::-webkit-scrollbar-thumb {
-  background-color: #430036;
+  background-color: #a1a1a1;
   border-radius: 8px;
 }
 
 .table-responsive::-webkit-scrollbar {
-  background-color: #eee;
+  background-color: #f5f5f5;
   width: 4px;
   height: 4px;
 }
@@ -4617,7 +4621,7 @@ table {
 /*---------------------------------------*/
 /*---------------------------------------*/
 .hints .polish {
-  color: #410034;
+  color: #7D349D;
 }
 
 .hints .wash {
@@ -4634,6 +4638,26 @@ table {
 
 .hints .gift {
   color: #D6596D;
+}
+
+tbody .polish {
+  background-color: #7D349D !important;
+}
+
+tbody .wash {
+  background-color: #E97526 !important;
+}
+
+tbody .sterili {
+  background-color: #9F9D9F !important;
+}
+
+tbody .month {
+  background-color: #5986D6 !important;
+}
+
+tbody .gift {
+  background-color: #D6596D !important;
 }
 
 .todo-func span {
@@ -4660,7 +4684,7 @@ table {
   display: flex;
 } */
 .todo-func .polish {
-  background-color: #410034;
+  background-color: #7D349D;
   color: #fff;
 }
 
@@ -4685,7 +4709,7 @@ table {
 }
 
 .todo-func .availableTime {
-  background-color: #4F986E;
+  background-color: #7D349D;
   color: #fff;
 }
 
@@ -4765,7 +4789,7 @@ table {
 }
 
 .availableTime {
-  color: #4F986E;
+  color: #7D349D;
 }
 
 .unavailableTime {
