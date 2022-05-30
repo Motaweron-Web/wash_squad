@@ -4804,6 +4804,7 @@ tbody .gift {
 
 .breadcrumb {
   padding: 10px;
+  margin-bottom: 0;
 }
 
 .breadcrumb a {
@@ -4943,6 +4944,66 @@ tbody .gift {
 
 .orangeBtn:hover {
   color: #CA673C;
+  background-color: #fff;
+}
+
+.packages .singlePackage {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.packages .singlePackage .packageImg img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages .singlePackage .title {
+  color: #430036;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.packages .singlePackage .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.packages .singlePackage .edit {
+  background-color: #CA673C;
+  color: #ffffff;
+  width: 100%;
+}
+
+.packages .singlePackage .delete {
+  background-color: #CA3C3C;
+  color: #ffffff;
+  width: 100%;
+}
+
+.mainBtn {
+  background-color: #430036;
+  color: #ffffff;
+  border: 1px solid #430036;
+}
+
+.mainBtn:hover {
+  color: #430036;
   background-color: #fff;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */
