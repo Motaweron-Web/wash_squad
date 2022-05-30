@@ -146,7 +146,7 @@ h6 {
 }
 
 .page-content {
-  padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+  padding: 96px 48px;
 }
 
 .header-item {
@@ -4813,6 +4813,7 @@ tbody .gift {
 
 .breadcrumb .active a {
   color: #817C7B;
+  pointer-events: none;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -4918,5 +4919,30 @@ tbody .gift {
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 16px;
+}
+
+.editService {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.editService .form-label {
+  color: #430036;
+}
+
+.editService input {
+  border-color: #430036;
+}
+
+.orangeBtn {
+  background-color: #CA673C;
+  border: 1px solid #CA673C;
+  color: #fff;
+}
+
+.orangeBtn:hover {
+  color: #CA673C;
+  background-color: #fff;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */

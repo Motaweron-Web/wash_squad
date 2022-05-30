@@ -13,6 +13,8 @@
     <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- Plugins css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -32,9 +34,12 @@
         <div class="main-content">
             <div class="page-content">
                 <!-- breadcrumb -->
-                <ol class="breadcrumb ">
-                    <li class="breadcrumb-item active"> <a href="app_setting_services.html"> الخدمات </a> </li>
-                </ol>
+                <div class="d-flex justify-content-between align-items-center">
+                    <ol class="breadcrumb ">
+                        <li class="breadcrumb-item active"> <a href="app_setting_services.html"> الخدمات </a> </li>
+                    </ol>
+                    <!-- <button class="btn btn-dark" onclick="history.back()"> عودة </button> -->
+                </div>
                 <!-- end breadcrumb -->
                 <!-- setting Service -->
                 <section class="settingService">
@@ -47,11 +52,11 @@
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" id="wash" type="checkbox" role="switch" checked>
                                     <label class="form-check-label" for="wash" >
-                                        <a href="#!" class="btn packagesBtn">
+                                        <a href="app_setting_services_packages.html" class="btn packagesBtn">
                                             <i class="fas fa-tag"></i>
                                             الباقات
                                         </a>
-                                        <a href="#!" class="btn editBtn">
+                                        <a href="app_setting_services_edit.html" class="btn editBtn">
                                             تعديل
                                         </a>
 
@@ -66,11 +71,11 @@
                                <div class="form-check form-switch">
                                     <input class="form-check-input" id="polishing" type="checkbox" role="switch" checked>
                                     <label class="form-check-label" for="polishing" >
-                                        <a href="#!" class="btn packagesBtn">
+                                        <a href="app_setting_services_packages.html" class="btn packagesBtn">
                                             <i class="fas fa-tag"></i>
                                             الباقات
                                         </a>
-                                        <a href="#!" class="btn editBtn">
+                                        <a href="app_setting_services_edit.html" class="btn editBtn">
                                             تعديل
                                         </a>
 
@@ -84,11 +89,11 @@
                                <div class="form-check form-switch">
                                     <input class="form-check-input" id="sterilization" type="checkbox" role="switch" checked>
                                     <label class="form-check-label" for="sterilization" >
-                                        <a href="#!" class="btn packagesBtn">
+                                        <a href="app_setting_services_packages.html" class="btn packagesBtn">
                                             <i class="fas fa-tag"></i>
                                             الباقات
                                         </a>
-                                        <a href="#!" class="btn editBtn">
+                                        <a href="app_setting_services_edit.html" class="btn editBtn">
                                             تعديل
                                         </a>
 
@@ -102,11 +107,11 @@
                                <div class="form-check form-switch">
                                     <input class="form-check-input" id="sendService" type="checkbox" role="switch" >
                                     <label class="form-check-label" for="sendService" >
-                                        <a href="#!" class="btn packagesBtn">
+                                        <a href="app_setting_services_packages.html" class="btn packagesBtn">
                                             <i class="fas fa-tag"></i>
                                             الباقات
                                         </a>
-                                        <a href="#!" class="btn editBtn">
+                                        <a href="app_setting_services_edit.html" class="btn editBtn">
                                             تعديل
                                         </a>
 
@@ -120,11 +125,11 @@
                                <div class="form-check form-switch">
                                     <input class="form-check-input" id="subscription" type="checkbox" role="switch" >
                                     <label class="form-check-label" for="subscription" >
-                                        <a href="#!" class="btn packagesBtn">
+                                        <a href="app_setting_services_packages.html" class="btn packagesBtn">
                                             <i class="fas fa-tag"></i>
                                             الباقات
                                         </a>
-                                        <a href="#!" class="btn editBtn">
+                                        <a href="app_setting_services_edit.html" class="btn editBtn">
                                             تعديل
                                         </a>
 
@@ -136,12 +141,14 @@
                 </section>
             </div>
         </div>
-        <!-- JAVASCRIPT -->
+      <!-- JAVASCRIPT -->
         <script src="assets/libs/jquery/jquery.min.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
+        <!-- dropzone js -->
+        <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
         <!-- apexcharts js -->
         <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
         <!-- jquery.vectormap map -->

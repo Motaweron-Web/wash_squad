@@ -160,7 +160,7 @@ h6 {
 }
 
 .page-content {
-  padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+  padding: 96px 48px ;
 }
 
 .header-item {
@@ -5058,6 +5058,8 @@ tbody {
   .active {
     a {
       color: #817C7B;
+      pointer-events: none;
+
     }
   }
 }
@@ -5109,9 +5111,10 @@ tbody {
         margin-bottom: 20px;
       }
 
-.form-check-label{
-  transition: .3s ease-in-out;
-}
+      .form-check-label {
+        transition: .3s ease-in-out;
+      }
+
       .form-check-label:not(:checked) {
         filter: grayscale(.7);
         opacity: .4;
@@ -5146,5 +5149,28 @@ tbody {
       padding: 8px 16px;
       border-radius: 16px;
     }
+  }
+}
+
+
+.editService{
+  padding: 20px;
+  background-color: $white-color;
+  border-radius: 10px;
+  .form-label{
+    color: $mainColor;
+  }
+  input{
+    border-color:  $mainColor;
+  }
+}
+
+.orangeBtn{
+  background-color: #CA673C;
+  border: 1px solid #CA673C ;
+  color: #fff;
+  &:hover{
+    color:#CA673C ;
+    background-color: #fff;
   }
 }
