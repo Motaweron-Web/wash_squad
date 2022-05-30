@@ -4984,16 +4984,55 @@ tbody .gift {
   height: 100%;
 }
 
-.packages .singlePackage .edit {
+.packages .singlePackage .actions .edit {
   background-color: #CA673C;
   color: #ffffff;
   width: 100%;
 }
 
-.packages .singlePackage .delete {
+.packages .singlePackage .actions .delete {
   background-color: #CA3C3C;
   color: #ffffff;
   width: 100%;
+}
+
+.packages .singlePackage ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.packages .singlePackage ul li {
+  margin-bottom: 5px;
+}
+
+.packages .singlePackage ul li:last-child {
+  margin: 0;
+}
+
+.packages .singlePackage .actionsIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.packages .singlePackage .actionsIcons .delete {
+  color: #CA3C3C;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.packages .singlePackage .actionsIcons .edit {
+  color: #CA673C;
+  font-size: 30px;
+  margin: 5px;
 }
 
 .mainBtn {

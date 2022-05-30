@@ -5205,30 +5205,64 @@ tbody {
       align-items: center;
       justify-content: space-around;
       height: 100%;
+
+      .edit {
+        background-color: #CA673C;
+        color: $white-color;
+        width: 100%;
+      }
+
+      .delete {
+        background-color: #CA3C3C;
+        color: $white-color;
+        width: 100%;
+      }
     }
 
-    .edit {
-      background-color: #CA673C;
-      color: $white-color;
-      width: 100%;
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li{
+        margin-bottom: 5px;
+        &:last-child{
+          margin: 0;
+        }
+      }
     }
 
-    .delete {
-      background-color: #CA3C3C;
-      color: $white-color;
-      width: 100%;
+
+    .actionsIcons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .delete {
+        color: #CA3C3C ;
+        font-size: 30px;
+        margin: 5px;
+      }
+      .edit {
+        color: #CA673C;
+        font-size: 30px;
+        margin: 5px;
+      }
+
     }
   }
 }
 
 
-.mainBtn{
+.mainBtn {
   background-color: $mainColor;
   color: $white-color;
   border: 1px solid $mainColor;
+
   &:hover {
     color: $mainColor;
     background-color: #fff;
   }
 
 }
+
+
