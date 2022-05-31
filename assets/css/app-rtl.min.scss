@@ -5329,27 +5329,29 @@ tbody {
       background-color: #CA3C3C;
       color: $white-color;
     }
+
+    .actionsIcons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .delete {
+        color: #CA3C3C;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+      .edit {
+        color: #430036;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+    }
   }
 
-  .actionsIcons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 
-    .delete {
-      color: #CA3C3C;
-      font-size: 20px;
-      margin: 5px;
-    }
-
-    .edit {
-      color: #430036;
-      font-size: 20px;
-      margin: 5px;
-    }
-
-  }
 
   .times {
     padding: 30px 0;
@@ -5394,4 +5396,115 @@ tbody {
 .form-switch .form-check-input {
   min-height: 20px;
   min-width: 40px;
+}
+
+.drivers {
+  table {
+    text-align: center;
+
+    thead {
+      background: #FFF !important;
+      color: #4b4b4b !important;
+    }
+
+    tbody {
+      background-color: #fff;
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 100px;
+      }
+    }
+
+    .active {
+      padding: 4px 16px;
+      font-size: small;
+      border-radius: 100px;
+      background-color: #4F986E;
+      color: $white-color;
+    }
+
+    .closed {
+      padding: 4px 16px;
+      font-size: small;
+      border-radius: 100px;
+      background-color: #CA3C3C;
+      color: $white-color;
+    }
+
+    .actionsIcons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .delete {
+        color: #CA3C3C;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+      .edit {
+        color: #430036;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+      .status {
+        color: #430036;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+    }
+  }
+}
+
+.driversModal {
+  .modal-content {
+    border: none;
+
+    .modal-header {
+      background-color: $mainColor;
+
+      .modal-title {
+        color: $white-color  !important;
+      }
+      i{
+        font-size: 24px;
+        color: $white-color;
+        cursor: pointer;
+      }
+    }
+    .modal-body{
+      padding: 20px 40px;
+
+    .statusDetails{
+
+      .SingleStatus{
+        text-align: center;
+         box-shadow: 0px 2px 4px #00000030;
+         padding: 20px;
+         border-radius: 10px;
+         img{
+           width: 100%;
+           height: 30px;
+           object-fit: contain;
+           margin-bottom: 10px;
+         }
+         h6{
+           color: $mainColor;
+           font-weight: bold;
+           margin-bottom: 10px;
+         }
+         h3{
+           font-weight: bold ;
+           color:  #777;
+         }
+      }
+    }
+  }
+  }
 }
