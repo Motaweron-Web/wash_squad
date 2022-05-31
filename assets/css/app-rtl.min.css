@@ -2020,18 +2020,25 @@ span {
 
 .minus,
 .plus {
-  width: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  height: 20px;
   background: #f2f2f2;
   border-radius: 4px;
   border: 1px solid #ddd;
-  display: inline-block;
-  vertical-align: middle;
   text-align: center;
+  height: 35px;
+  min-width: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .count {
@@ -5044,5 +5051,142 @@ tbody .gift {
 .mainBtn:hover {
   color: #430036;
   background-color: #fff;
+}
+
+.regions .allRegions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.regions .allRegions .singleRegion {
+  padding: 20px;
+  background-color: #E97526;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.regions .allRegions .singleRegion h5 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.regions .allRegions .singleRegion i {
+  font-size: 25px;
+}
+
+.regions .allRegions .singleRegion a {
+  color: #ffffff;
+}
+
+.regions table {
+  text-align: center;
+}
+
+.regions table thead {
+  background: #FFF !important;
+  color: #4b4b4b !important;
+}
+
+.regions table tbody {
+  background-color: #fff;
+}
+
+.regions table .active {
+  padding: 4px 16px;
+  font-size: small;
+  border-radius: 100px;
+  background-color: #4F986E;
+  color: #ffffff;
+}
+
+.regions table .closed {
+  padding: 4px 16px;
+  font-size: small;
+  border-radius: 100px;
+  background-color: #CA3C3C;
+  color: #ffffff;
+}
+
+.regions .actionsIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.regions .actionsIcons .delete {
+  color: #CA3C3C;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.regions .actionsIcons .edit {
+  color: #430036;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.regions .times {
+  padding: 30px 0;
+}
+
+.regions .times h6 {
+  color: #430036;
+  font-weight: bold;
+}
+
+.regions .times .days,
+.regions .times .intervals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.regions .times .days .form-select,
+.regions .times .intervals .form-select {
+  width: auto;
+  margin: 5px;
+  border-radius: 100px;
+}
+
+.regions .times .days .form-select:first-child,
+.regions .times .intervals .form-select:first-child {
+  margin-right: 0;
+}
+
+.regions .times .add {
+  padding: 0px 20px;
+}
+
+.regions .times .add i {
+  font-size: 25px;
+  color: #430036;
+}
+
+.form-switch .form-check-input {
+  min-height: 20px;
+  min-width: 40px;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */
