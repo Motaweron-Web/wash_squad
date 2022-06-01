@@ -5472,39 +5472,167 @@ tbody {
       .modal-title {
         color: $white-color  !important;
       }
-      i{
+
+      i {
         font-size: 24px;
         color: $white-color;
         cursor: pointer;
       }
     }
-    .modal-body{
+
+    .modal-body {
       padding: 20px 40px;
 
-    .statusDetails{
+      .statusDetails {
 
-      .SingleStatus{
-        text-align: center;
-         box-shadow: 0px 2px 4px #00000030;
-         padding: 20px;
-         border-radius: 10px;
-         img{
-           width: 100%;
-           height: 30px;
-           object-fit: contain;
-           margin-bottom: 10px;
-         }
-         h6{
-           color: $mainColor;
-           font-weight: bold;
-           margin-bottom: 10px;
-         }
-         h3{
-           font-weight: bold ;
-           color:  #777;
-         }
+        .SingleStatus {
+          text-align: center;
+          box-shadow: 0px 2px 4px #00000030;
+          padding: 20px;
+          border-radius: 10px;
+
+          img {
+            width: 100%;
+            height: 30px;
+            object-fit: contain;
+            margin-bottom: 10px;
+          }
+
+          h6 {
+            color: $mainColor;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          h3 {
+            font-weight: bold;
+            color: #777;
+          }
+        }
       }
     }
   }
+}
+
+.driverRate {
+  padding-top: 40px;
+
+  .fullRate {
+    padding: 20px;
+    background-color: $white-color;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #00000030;
+
+    h6 {
+      text-align: center;
+      font-weight: bold;
+      color: $mainColor;
+      margin-bottom: 30px;
+    }
+
+    .fiveStarRate {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .stars {
+          display: flex;
+          flex-direction: row-reverse;
+          width: 30%;
+
+          i {
+            margin: 1px;
+            font-size: 12px;
+            color: $mainColor;
+          }
+        }
+
+        .reviews {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          width: 70%;
+
+          .bar {
+            width: 100%;
+            height: 10px;
+            background-color: #F7F7F7;
+            border-radius: 100px;
+            position: relative;
+
+            .percent {
+              position: absolute;
+              left: 0;
+              width: 60%;
+              height: 10px;
+              border-radius: 100px;
+              background-color: $mainColor;
+              cursor: unset;
+            }
+          }
+
+          .total {
+            padding-left: 5px;
+            margin: 0;
+          }
+        }
+      }
+    }
+
   }
 }
+
+.driverStatus {
+
+  .driverRateItem {
+    background-color: $white-color;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #00000030;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 30px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    h6 {
+      color: $mainColor;
+      margin-bottom: 10px;
+      font-size: smaller;
+      min-height: 30px;
+
+    }
+
+    h5 {
+      color: #888;
+      font-size: small;
+    }
+
+  }
+
+  .export{
+    background-color: $white-color;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #00000030;
+    padding: 20px;
+    width: 100%;
+    color: #817C7B;
+   
+  }
+}
+

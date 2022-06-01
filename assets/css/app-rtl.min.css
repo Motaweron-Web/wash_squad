@@ -5306,4 +5306,144 @@ tbody .gift {
   font-weight: bold;
   color: #777;
 }
+
+.driverRate {
+  padding-top: 40px;
+}
+
+.driverRate .fullRate {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+}
+
+.driverRate .fullRate h6 {
+  text-align: center;
+  font-weight: bold;
+  color: #430036;
+  margin-bottom: 30px;
+}
+
+.driverRate .fullRate .fiveStarRate {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.driverRate .fullRate .fiveStarRate li {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.driverRate .fullRate .fiveStarRate li:last-child {
+  margin-bottom: 0;
+}
+
+.driverRate .fullRate .fiveStarRate li .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 30%;
+}
+
+.driverRate .fullRate .fiveStarRate li .stars i {
+  margin: 1px;
+  font-size: 12px;
+  color: #430036;
+}
+
+.driverRate .fullRate .fiveStarRate li .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.driverRate .fullRate .fiveStarRate li .reviews .bar {
+  width: 100%;
+  height: 10px;
+  background-color: #F7F7F7;
+  border-radius: 100px;
+  position: relative;
+}
+
+.driverRate .fullRate .fiveStarRate li .reviews .bar .percent {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #430036;
+  cursor: unset;
+}
+
+.driverRate .fullRate .fiveStarRate li .reviews .total {
+  padding-left: 5px;
+  margin: 0;
+}
+
+.driverStatus .driverRateItem {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+}
+
+.driverStatus .driverRateItem img {
+  width: 100%;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.driverStatus .driverRateItem h6 {
+  color: #430036;
+  margin-bottom: 10px;
+  font-size: smaller;
+  min-height: 30px;
+}
+
+.driverStatus .driverRateItem h5 {
+  color: #888;
+  font-size: small;
+}
+
+.driverStatus .export {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  padding: 20px;
+  width: 100%;
+  color: #817C7B;
+}
 /*# sourceMappingURL=app-rtl.min.css.map */
