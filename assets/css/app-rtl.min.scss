@@ -5200,6 +5200,10 @@ tbody {
       margin-bottom: 20px;
     }
 
+    p {
+      margin: 0;
+    }
+
     .actions {
       display: flex;
       flex-direction: column;
@@ -5211,12 +5215,14 @@ tbody {
         background-color: #CA673C;
         color: $white-color;
         width: 100%;
+        margin: 5px;
       }
 
       .delete {
         background-color: #CA3C3C;
         color: $white-color;
         width: 100%;
+        margin: 5px;
       }
     }
 
@@ -5625,14 +5631,13 @@ tbody {
 
   }
 
-  .export{
+  .export {
     background-color: $white-color;
     border-radius: 10px;
     box-shadow: 0px 2px 4px #00000030;
     padding: 20px;
     width: 100%;
     color: #817C7B;
-   
+
   }
 }
-
