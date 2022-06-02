@@ -5492,4 +5492,32 @@ tbody .gift {
 .carsSize .grid .car .btn {
   width: 100%;
 }
+
+.discountsModal .DisStatus {
+  text-align: center;
+}
+
+.discountsModal .DisStatus img {
+  height: 50px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.discountsModal .DisStatus h6 {
+  font-weight: bold;
+  color: #430036;
+  margin-bottom: 10px;
+}
+
+.discountsModal .DisStatus p {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.discountsModal .DisStatus p span {
+  font-weight: normal;
+  font-size: smaller;
+}
 /*# sourceMappingURL=app-rtl.min.css.map */
