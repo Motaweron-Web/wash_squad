@@ -5731,3 +5731,25 @@ tbody {
   background-color: $mainColor;
   color: $white-color;
 }
+
+.social{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  .form-group{
+    width: 100%;
+  }
+  .icon{
+    min-width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: $mainColor;
+    color: $white-color;
+    
+
+  }
+
+}
