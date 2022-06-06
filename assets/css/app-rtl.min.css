@@ -149,6 +149,18 @@ h6 {
   padding: 96px 48px;
 }
 
+@media (max-width: 991px) {
+  .page-content {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-content {
+    padding: 24px 12px;
+  }
+}
+
 .header-item {
   height: 70px;
   -webkit-box-shadow: none !important;
@@ -4962,7 +4974,7 @@ tbody .gift {
   text-align: center;
 }
 
-.packages .singlePackage .packageImg img {
+.packages .singlePackage img {
   width: 70px;
   height: 70px;
   -o-object-fit: cover;
@@ -4973,6 +4985,7 @@ tbody .gift {
   color: #430036;
   font-weight: bold;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .packages .singlePackage p {
@@ -4993,6 +5006,7 @@ tbody .gift {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100%;
+  max-width: 200px;
 }
 
 .packages .singlePackage .actions .edit {
@@ -5519,5 +5533,46 @@ tbody .gift {
 .discountsModal .DisStatus p span {
   font-weight: normal;
   font-size: smaller;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.pagination .page-item .page-link {
+  background-color: #ffffff;
+  border: none;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 2px 4px #00000030;
+          box-shadow: 0px 2px 4px #00000030;
+  padding: 0px 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px;
+}
+
+.pagination .page-item .page-link[aria-label="Previous"], .pagination .page-item .page-link[aria-label="Next"] {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pagination .page-item .page-link.active {
+  background-color: #430036;
+  color: #ffffff;
+}
+
+.input-group-text {
+  background-color: #430036;
+  color: #ffffff;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */
