@@ -5111,6 +5111,10 @@ tbody .gift {
           align-items: center;
 }
 
+.regions .allRegions .singleRegion.active {
+  background-color: #430036;
+}
+
 .regions .allRegions .singleRegion h5 {
   margin: 0;
   color: #ffffff;
@@ -5706,5 +5710,39 @@ tbody .gift {
 
 .form-control {
   min-height: 43px;
+}
+
+.vip {
+  background-color: #FFD700;
+  color: #430036;
+}
+
+.vipCheck .form-check-input {
+  min-height: 25px;
+  min-width: 50px;
+}
+
+.vipCheck .form-check-input:checked {
+  background-image: url("../images/icons/vip.png");
+  background-color: #FFD700;
+  border-color: #FFD700;
+}
+
+.block img,
+.addBalance img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.disabledEvent {
+  -webkit-filter: grayscale(100%) opacity(0.5);
+          filter: grayscale(100%) opacity(0.5);
+  pointer-events: none;
+}
+
+.paginate_button.active .page-link {
+  color: #430036;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */

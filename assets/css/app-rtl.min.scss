@@ -5297,6 +5297,7 @@ tbody {
   }
 }
 
+
 .regions {
   .allRegions {
     display: grid;
@@ -5311,6 +5312,10 @@ tbody {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      &.active {
+        background-color: $mainColor;
+      }
 
       h5 {
         margin: 0;
@@ -5843,6 +5848,43 @@ tbody {
   }
 }
 
-.form-control{
+.form-control {
   min-height: 43px;
+}
+
+
+.vip {
+  background-color: $gold;
+  color: $mainColor;
+}
+
+.vipCheck .form-check-input {
+  min-height: 25px;
+  min-width: 50px;
+
+  &:checked {
+    background-image: url('../images/icons/vip.png');
+    background-color: $gold;
+    border-color: $gold;
+  }
+}
+
+.block,
+.addBalance {
+  img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+
+}
+
+.disabledEvent {
+  filter: grayscale(100%) opacity(0.5);
+  pointer-events: none;
+
+}
+
+.paginate_button.active .page-link {
+  color: $mainColor;
 }
