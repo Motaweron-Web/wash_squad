@@ -42,8 +42,8 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <!-- modal -->
-                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal fade" id="addEmployee" tabindex="-1" role="dialog"
+                        aria-labelledby="addEmployeeTitle" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-body">
@@ -192,37 +192,13 @@
                     <!-- date -->
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="p-2">
-                            <button class="stoped">
+                            <button class="stoped" data-bs-toggle="modal" data-bs-target="#addEmployee">
                                 <i class="fas fa-plus me-2"></i>
                                 إضافة طلب
                             </button>
                         </div>
                         <div class="d-flex flex-wrap justify-content-end mb-3">
-                            <div class="p-2">
-                                <select class="form-select shadow-lg">
-                                    <option selected>Today </option>
-                                    <option value="1">This week</option>
-                                    <option value="2">Last week</option>
-                                    <option value="3">This month</option>
-                                    <option value="4">This year</option>
-                                </select>
-                            </div>
-                            <div class="p-2">
-                                <select class="form-select shadow-lg">
-                                    <option selected> January </option>
-                                    <option value="1"> February </option>
-                                    <option value="2"> March </option>
-                                    <option value="3"> April </option>
-                                </select>
-                            </div>
-                            <div class="p-2">
-                                <select class="form-select shadow-lg">
-                                    <option selected>2022</option>
-                                    <option value="1">2021</option>
-                                    <option value="2">2020</option>
-                                    <option value="3">2019</option>
-                                </select>
-                            </div>
+                       
                             <div class="p-2">
                                 <button class="btn  exportExcel"> <i class="fas fa-download me-2"></i> Export Excel
                                 </button>
@@ -232,7 +208,7 @@
                     <!-- table -->
                     <div class="burn">
                         <div class="table-responsive mb-0 rounded">
-                            <table id="datatable-buttons" class="table dt-responsive nowrap">
+                            <table id="datatable" class="table bg-white dt-responsive nowrap">
                                 <thead>
                                     <tr>
                                         <th> رقم الموظف </th>
