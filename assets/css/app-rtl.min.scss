@@ -5917,7 +5917,7 @@ tbody {
 
 .VIPDiscount,
 .cashback {
-  padding: 50px 20px;
+  padding: 30px 20px;
 
   img {
     width: 100%;
@@ -5970,6 +5970,9 @@ tbody {
 
     &.active {
       background-color: $mainColor;
+    }
+    &.gray {
+      background-color: #777;
     }
 
     h5 {

@@ -5781,7 +5781,7 @@ tbody .gift {
 
 .VIPDiscount,
 .cashback {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 
 .VIPDiscount img,
@@ -5854,6 +5854,10 @@ tbody .gift {
 
 .logs .singleLog.active {
   background-color: #430036;
+}
+
+.logs .singleLog.gray {
+  background-color: #777;
 }
 
 .logs .singleLog h5 {
