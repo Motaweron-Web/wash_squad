@@ -5298,6 +5298,14 @@ tbody .gift {
   color: #ffffff;
 }
 
+.drivers table .new {
+  padding: 4px 16px;
+  font-size: small;
+  border-radius: 100px;
+  background-color: #417fc5;
+  color: #ffffff;
+}
+
 .drivers table .actionsIcons {
   display: -webkit-box;
   display: -ms-flexbox;
