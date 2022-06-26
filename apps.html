@@ -44,10 +44,10 @@
                     <!-- date -->
                     <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                         <div class="p-2">
-                            <button class="stoped">
+                            <a href="apps_add.html" class="stoped">
                                 <i class="fas fa-plus me-2"></i>
-                                إضافة طلب
-                            </button>
+                                إضافة تطبيق جديد
+                            </a>
                         </div>
                         <div class="d-flex flex-wrap justify-content-end mb-3">
                             <div class="p-2">
@@ -83,9 +83,9 @@
                     </div>
                     <!-- table -->
                     <div class="table-rep-plugin">
-                        <div class="table-responsive mb-0 rounded" data-pattern="priority-columns">
+                        <div class="table-responsive mb-0 text-center rounded" data-pattern="priority-columns">
                             <table id="tech-companies-1" class="table ">
-                                <thead>
+                                <thead style="background: linear-gradient(0deg, #a85f51, #430036); color: #fff;">
                                     <tr>
                                         <th> الإسم </th>
                                         <th> الشعار </th>
@@ -93,9 +93,9 @@
                                         <th> عدد الطلبات </th>
                                         <th> المقبولة </th>
                                         <th> الملغية </th>
-                                        <th> الإنتظار </th>
-                                        <th> إجمالي القيمة </th>
-                                        <th> الحجوزات </th>
+                                        <th> إجمالي المبيعات </th>
+                                        <th> نسبة العمولة </th>
+                                        <th> </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -106,9 +106,12 @@
                                         <td> 10500 </td>
                                         <td> 5 </td>
                                         <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
+                                        <td> 15000SR </td>
+                                        <td> 12% </td>
+                                        <td>
+                                            <a href="apps_add.html" class="more-details me-3"> تعديل </a>
+                                            <a href="apps_status.html"> <img src="assets/images/icons/assessment.svg" style="width: 30px; height: 30px;" alt=""> </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td> تطبيق سرور </td>
@@ -117,9 +120,12 @@
                                         <td> 10500 </td>
                                         <td> 5 </td>
                                         <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
+                                        <td> 15000SR </td>
+                                        <td> 12% </td>
+                                        <td>
+                                            <a href="apps_add.html" class="more-details me-3"> تعديل </a>
+                                            <a href="apps_status.html"> <img src="assets/images/icons/assessment.svg" style="width: 30px; height: 30px;" alt=""> </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td> تطبيق سرور </td>
@@ -128,42 +134,12 @@
                                         <td> 10500 </td>
                                         <td> 5 </td>
                                         <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> تطبيق سرور </td>
-                                        <td> <img src="assets/images/apps/1596415739.png" alt="" srcset=""> </td>
-                                        <td> منذ شهر </td>
-                                        <td> 10500 </td>
-                                        <td> 5 </td>
-                                        <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> تطبيق سرور </td>
-                                        <td> <img src="assets/images/apps/1596415739.png" alt="" srcset=""> </td>
-                                        <td> منذ شهر </td>
-                                        <td> 10500 </td>
-                                        <td> 5 </td>
-                                        <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
-                                    </tr>
-                                    <tr>
-                                        <td> تطبيق سرور </td>
-                                        <td> <img src="assets/images/apps/1596415739.png" alt="" srcset=""> </td>
-                                        <td> منذ شهر </td>
-                                        <td> 10500 </td>
-                                        <td> 5 </td>
-                                        <td> 3 </td>
-                                        <td> 6 </td>
-                                        <td> 1500 sr </td>
-                                        <td> <button class="more-details"> تفاصيل أكثر </button> </td>
+                                        <td> 15000SR </td>
+                                        <td> 12% </td>
+                                        <td>
+                                            <a href="apps_add.html" class="more-details me-3"> تعديل </a>
+                                            <a href="apps_status.html"> <img src="assets/images/icons/assessment.svg" style="width: 30px; height: 30px;" alt=""> </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -172,8 +148,8 @@
                 </div>
             </div>
         </div>
-      <!-- JAVASCRIPT -->
-                <!-- JAVASCRIPT -->
+        <!-- JAVASCRIPT -->
+        <!-- JAVASCRIPT -->
         <script src="assets/libs/jquery/jquery.min.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>

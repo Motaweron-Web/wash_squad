@@ -46,7 +46,7 @@
                         <div class="p-2">
                             <button class="stoped" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
                                 <i class="fas fa-plus me-2"></i>
-                                موظف جديد
+                                اضافة طلب
                             </button>
                         </div>
                         <div class="d-flex flex-wrap justify-content-end align-items-center mb-3">
@@ -68,106 +68,116 @@
                             </div>
                         </div>
                     </div>
-                    <!-- table -->
-                    <div class="table-responsive mb-0 rounded" data-pattern="priority-columns">
-                        <table id="datatable-buttons" class="table dt-responsive nowrap">
-                            <thead>
-                                <tr>
-                                    <th> رقم الطلب </th>
-                                    <th> تاريخ الطلب </th>
-                                    <th> نوع الخدمة </th>
-                                    <th> العدد </th>
-                                    <th>خدمة اضافة </th>
-                                    <th> اسم المرسل </th>
-                                    <th> رقم الجوال </th>
-                                    <th> اسم المرسل اليه </th>
-                                    <th> رقم الجوال </th>
-                                    <th> الماركة </th>
-                                    <th> الإجمالى </th>
-                                    <th> فاتورة </th>
-                                    <th> </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="   serv-border  ">
-                                    <td> 10872 </td>
-                                    <td> 2021/07/13 </td>
-                                    <td> تلميع </td>
-                                    <td> 2 </td>
-                                    <td> تلميع مكينة </td>
-                                    <td> محمد </td>
-                                    <td> 0586877977 </td>
-                                    <td> خالد علي </td>
-                                    <td> 0586877977 </td>
-                                    <td> مازدا </td>
-                                    <td> 250SR </td>
-                                    <td> <a href="#"> <i class="fas fa-file-pdf"></i> </a> </td>
-                                    <td>
-                                        <a class="stoped order btn text-white" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModalScrollable" style="cursor: pointer;"> إدخال
-                                            الطلب </a>
-                                    </td>
-                                </tr>
-                                <tr class="   serv-border  ">
-                                    <td> 10872 </td>
-                                    <td> 2021/07/13 </td>
-                                    <td> تلميع </td>
-                                    <td> 2 </td>
-                                    <td> تلميع مكينة </td>
-                                    <td> محمد </td>
-                                    <td> 0586877977 </td>
-                                    <td> خالد علي </td>
-                                    <td> 0586877977 </td>
-                                    <td> مازدا </td>
-                                    <td> 250SR </td>
-                                    <td> <a href="#"> <i class="fas fa-file-pdf"></i> </a> </td>
-                                    <td>
-                                        <a class="stoped order btn text-white" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModalScrollable" style="cursor: pointer;"> إدخال
-                                            الطلب </a>
-                                    </td>
-                                </tr>
-                                <tr class="   serv-border  ">
-                                    <td> 10872 </td>
-                                    <td> 2021/07/13 </td>
-                                    <td> تلميع </td>
-                                    <td> 2 </td>
-                                    <td> تلميع مكينة </td>
-                                    <td> محمد </td>
-                                    <td> 0586877977 </td>
-                                    <td> خالد علي </td>
-                                    <td> 0586877977 </td>
-                                    <td> مازدا </td>
-                                    <td> 250SR </td>
-                                    <td> <a href="#"> <i class="fas fa-file-pdf"></i> </a> </td>
-                                    <td>
-                                        <a class="stoped order btn text-white" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModalScrollable" style="cursor: pointer;"> إدخال
-                                            الطلب </a>
-                                    </td>
-                                </tr>
-                                <tr class="   serv-border  ">
-                                    <td> 10872 </td>
-                                    <td> 2021/07/13 </td>
-                                    <td> تلميع </td>
-                                    <td> 2 </td>
-                                    <td> تلميع مكينة </td>
-                                    <td> محمد </td>
-                                    <td> 0586877977 </td>
-                                    <td> خالد علي </td>
-                                    <td> 0586877977 </td>
-                                    <td> مازدا </td>
-                                    <td> 250SR </td>
-                                    <td> <a href="#"> <i class="fas fa-file-pdf"></i> </a> </td>
-                                    <td>
-                                        <a class="stoped order btn text-white" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModalScrollable" style="cursor: pointer;"> إدخال
-                                            الطلب </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+
+                    <section class="drivers ">
+                        <!-- table -->
+                        <div class="table-responsive mb-0 rounded" data-pattern="priority-columns">
+                            <table id="datatable" class="table dt-responsive table-striped nowrap">
+                                <thead>
+                                    <tr>
+                                        <th> رقم الطلب </th>
+                                        <th> تاريخ الطلب </th>
+                                        <th> نوع الخدمة </th>
+                                        <th> العدد </th>
+                                        <th>خدمة اضافة </th>
+                                        <th> اسم المرسل </th>
+                                        <th> رقم الجوال </th>
+                                        <th> اسم المرسل اليه </th>
+                                        <th> رقم الجوال </th>
+                                        <th> الماركة </th>
+                                        <th> الإجمالى </th>
+                                        <th> فاتورة </th>
+                                        <th> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> تلميع </td>
+                                        <td> 2 </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> خالد علي </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td>
+                                            <a href="#"> <img class="pdfImg" src="assets/images/icons/pdf.svg"
+                                                    alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a class=" btn btn-success"> تم الاعتماد </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> تلميع </td>
+                                        <td> 2 </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> خالد علي </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td>
+                                            <a href="#"> <img class="pdfImg" src="assets/images/icons/pdf.svg"
+                                                    alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a class="stoped order btn text-white"> إدخال الطلب </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> تلميع </td>
+                                        <td> 2 </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> خالد علي </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td>
+                                            <a href="#"> <img class="pdfImg" src="assets/images/icons/pdf.svg"
+                                                    alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a class="stoped order btn text-white"> إدخال الطلب </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> تلميع </td>
+                                        <td> 2 </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> خالد علي </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td>
+                                            <a href="#"> <img class="pdfImg" src="assets/images/icons/pdf.svg"
+                                                    alt=""></a>
+                                        </td>
+                                        <td>
+                                            <a class="stoped order btn text-white"> إدخال الطلب </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+
                 </div>
                 <!-- modal -->
                 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
@@ -190,21 +200,20 @@
                                         <div class="row pt-4">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> إسم العميل </label>
-                                                    <input class="form-control" type="text" id="default-input"
-                                                        placeholder="بكري">
+                                                    <label class="form-label"> إسم العميل
+                                                    </label>
+                                                    <input class="form-control" type="text" placeholder="بكري">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input">رقم الجوال</label>
-                                                    <input class="form-control" type="number" id="default-input"
-                                                        placeholder="213243">
+                                                    <label class="form-label">رقم الجوال</label>
+                                                    <input class="form-control" type="number" placeholder="213243">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> الحي </label>
+                                                    <label class="form-label"> الحي </label>
                                                     <select class="form-select mo-form-select" name="" id="">
                                                         <option value="">الحي</option>
                                                     </select>
@@ -212,29 +221,23 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> تاريخ الطلب </label>
-                                                    <input class="form-control" type="date" id="default-input"
-                                                        placeholder="Default input">
+                                                    <label class="form-label"> تاريخ الطلب
+                                                    </label>
+                                                    <input class="form-control" type="date" >
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> وقت الطلب </label>
-                                                    <input class="form-control" type="time" id="default-input"
-                                                        placeholder="43432">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> الفئة </label>
+                                                    <label class="form-label"> فترة الطلب
+                                                    </label>
                                                     <select class="form-select mo-form-select" name="" id="">
-                                                        <option value="">الفئة</option>
+                                                        <option value=""> 12:00 am </option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> ماركة السيارة
+                                                    <label class="form-label"> ماركة السيارة
                                                     </label>
                                                     <select class="form-select mo-form-select" name="" id="">
                                                         <option value="">دايو</option>
@@ -243,7 +246,17 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> عدد السيارات </label>
+                                                    <label class="form-label"> الفئة </label>
+                                                    <select class="form-select mo-form-select" name="" id="">
+                                                        <option value="">الفئة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label"> عدد السيارات
+                                                    </label>
                                                     <div class="number">
                                                         <span class="minus">-</span>
                                                         <input class="count" type="text" value="1" />
@@ -253,10 +266,25 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="default-input"> نوع الخدمة </label>
+                                                    <label class="form-label"> نوع الخدمة
+                                                    </label>
                                                     <select class="form-select mo-form-select" name="" id="">
                                                         <option value="">غسيل</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label"> الاجمالي
+                                                    </label>
+                                                    <input class="form-control" type="number" >
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label"> لوحة السيارة
+                                                    </label>
+                                                    <input class="form-control" type="text" >
                                                 </div>
                                             </div>
                                         </div>
@@ -266,7 +294,8 @@
                             <div class="modal-footer ">
                                 <div class="w-100 d-flex justify-content-between">
                                     <div class="">
-                                        <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal"> إلغاء
+                                        <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal">
+                                            إلغاء
                                         </button>
                                         <button type="button" class="btn stoped "> أضف </button>
                                     </div>

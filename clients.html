@@ -53,7 +53,7 @@
                             <input type="search" class="form-control searchInput" placeholder="phone number">
                         </div>
                         <div class=" col p-2">
-                            <input type="date" class="form-control">
+                            <input type="datetime-local" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="#!" class="block">
+                                        <a href="#!" class="block"  data-bs-toggle="modal" data-bs-target="#blockModal">
                                             <img src="assets/images/icons/block.svg" alt="">
                                         </a>
                                     </td>
@@ -212,7 +212,7 @@
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="#!" class="block disabledEvent">
+                                        <a href="#!" class="block disabledEvent" data-bs-toggle="modal" data-bs-target="#blockModal" >
                                             <img src="assets/images/icons/block.svg" alt="">
                                         </a>
                                     </td>
@@ -222,6 +222,30 @@
                     </div>
                 </section>
                 <!-- End Regions -->
+                <!-- Modal -->
+                <div class="modal fade discountsModal driversModal" id="blockModal" tabindex="-1"
+                    aria-labelledby="blockModalLabel">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="blockModalLabel"> block </h5>
+                                <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                            </div>
+                            <div class="modal-body">
+                                <div class="blockModal">
+                                   <h5> هل انت متاكد من حظر هذا العميل  </h5>
+
+                                   <div class="pt-4">
+                                    <button class="btn btn-danger"> تاكيد  </button>
+                                    <button data-bs-dismiss="modal" class="btn btn-dark" > الغاء  </button>
+                                   </div>
+                                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
                 <!-- Modal -->
                 <div class="modal fade discountsModal driversModal" id="VIPDiscount" tabindex="-1"
                     aria-labelledby="VIPDiscountLabel">
@@ -244,7 +268,7 @@
                                     </div>
                                     <div class="row">
                                         <label class="form-label"> نسبة الخصم للعملاء المميزيين  </label>
-                                        <div class="col-10 p-2">
+                                        <div class="col-10 p-2 ">
                                             <input class="form-control" type="text">
                                         </div>
                                         <div class="col-2 p-2">
@@ -278,8 +302,11 @@
                                     </div>
                                     <div class="row">
                                         <label class="form-label"> رصيد المحفظة </label>
-                                        <div class="col-10 p-2">
+                                        <!-- بعد تطبيق نسبة الخصم صح باللون الأخضر دلالة على التطبيق  -->
+                                        <div class="col-10 p-2 offerDone">
                                             <input class="form-control" type="text">
+                                            <img class="checkIcon" src="assets/images/icons/check.svg" alt="">
+
                                         </div>
                                         <div class="col-2 p-2">
                                             <button class=" btn mainBtn h-100 w-100"> اضافة </button>

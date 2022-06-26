@@ -2259,7 +2259,18 @@ span {
     color: #fff;
     padding: 15px;
     border-radius: 6px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
   }
+}
+
+.pdfImg {
+  width: 25px !important;
+  height: 25px !important;
 }
 
 .big-border-p {
@@ -2383,7 +2394,7 @@ input.spectrum.with-add-on {
 }
 
 .sent-service .count {
-  width: calc(100% - 48px) !important;
+  width: calc(100% - 80px) !important;
   border: 1px solid #3F0033;
 }
 
@@ -4621,7 +4632,7 @@ table {
   .stoped {
     background-color: #420036;
     font-size: 12px;
-    border-radius: 20px;
+    border-radius: 4px;
   }
 
   .canceled {
@@ -5243,17 +5254,19 @@ tbody {
       background-color: #CA3C3C;
       color: $white-color;
     }
-    .block{
+
+    .block {
       display: inline-flex;
       align-items: center;
       height: 100%;
-      img{
+
+      img {
         width: 50px;
         height: 50px;
         object-fit: contain;
       }
     }
-  
+
     .actions {
       display: flex;
       flex-direction: column;
@@ -5483,7 +5496,7 @@ tbody {
       color: $white-color;
     }
 
-    .new{
+    .new {
       padding: 4px 16px;
       font-size: small;
       border-radius: 100px;
@@ -5979,6 +5992,7 @@ tbody {
     &.active {
       background-color: $mainColor;
     }
+
     &.gray {
       background-color: #777;
     }
@@ -6002,4 +6016,28 @@ tbody {
       color: $white-color;
     }
   }
+}
+
+.offerDone {
+  position: relative;
+
+  input {
+    padding-left: 50px;
+  }
+
+  .checkIcon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+}
+
+.blockModal {
+  text-align: center;
+  padding: 40px 0;
 }

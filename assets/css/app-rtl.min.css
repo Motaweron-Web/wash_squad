@@ -2098,6 +2098,17 @@ span {
   border-radius: 6px;
 }
 
+.operation .cols-divs img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.pdfImg {
+  width: 25px !important;
+  height: 25px !important;
+}
+
 .big-border-p {
   border-bottom: 12px solid #fff !important;
 }
@@ -2220,7 +2231,7 @@ input.spectrum.with-add-on {
 }
 
 .sent-service .count {
-  width: calc(100% - 48px) !important;
+  width: calc(100% - 80px) !important;
   border: 1px solid #3F0033;
 }
 
@@ -4360,7 +4371,7 @@ table {
 .drivers .stoped {
   background-color: #420036;
   font-size: 12px;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .drivers .canceled {
@@ -5885,5 +5896,31 @@ tbody .gift {
 
 .logs .singleLog a {
   color: #ffffff;
+}
+
+.offerDone {
+  position: relative;
+}
+
+.offerDone input {
+  padding-left: 50px;
+}
+
+.offerDone .checkIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0;
+}
+
+.blockModal {
+  text-align: center;
+  padding: 40px 0;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */
