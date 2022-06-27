@@ -4786,6 +4786,24 @@ tbody .gift {
           box-shadow: 0px 4px 16px #00000050;
 }
 
+.day-div .ordersCount {
+  background-color: #E97526;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 5px;
+  min-width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .day-num {
   position: absolute;
   top: 10%;
@@ -4959,7 +4977,7 @@ tbody .gift {
 }
 
 .settingService .service .editBtn {
-  background-color: #CA673C;
+  background-color: #E97526;
   width: 100%;
   color: #ffffff;
   padding: 8px 16px;
@@ -4981,13 +4999,13 @@ tbody .gift {
 }
 
 .orangeBtn {
-  background-color: #CA673C;
-  border: 1px solid #CA673C;
+  background-color: #E97526;
+  border: 1px solid #E97526;
   color: #fff;
 }
 
 .orangeBtn:hover {
-  color: #CA673C;
+  color: #E97526;
   background-color: #fff;
 }
 
@@ -5068,7 +5086,7 @@ tbody .gift {
 }
 
 .packages .singlePackage .actions .edit {
-  background-color: #CA673C;
+  background-color: #E97526;
   color: #ffffff;
   width: 100%;
   margin: 5px;
@@ -5115,7 +5133,7 @@ tbody .gift {
 }
 
 .packages .singlePackage .actionsIcons .edit {
-  color: #CA673C;
+  color: #E97526;
   font-size: 30px;
   margin: 5px;
 }
@@ -5226,17 +5244,17 @@ tbody .gift {
   margin: 5px;
 }
 
-.regions .times {
+.times {
   padding: 30px 0;
 }
 
-.regions .times h6 {
+.times h6 {
   color: #430036;
   font-weight: bold;
 }
 
-.regions .times .days,
-.regions .times .intervals {
+.times .days,
+.times .intervals {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5246,23 +5264,23 @@ tbody .gift {
   margin-bottom: 20px;
 }
 
-.regions .times .days .form-select,
-.regions .times .intervals .form-select {
+.times .days .form-select,
+.times .intervals .form-select {
   width: auto;
   margin: 5px;
   border-radius: 100px;
 }
 
-.regions .times .days .form-select:first-child,
-.regions .times .intervals .form-select:first-child {
+.times .days .form-select:first-child,
+.times .intervals .form-select:first-child {
   margin-right: 0;
 }
 
-.regions .times .add {
+.times .add {
   padding: 0px 20px;
 }
 
-.regions .times .add i {
+.times .add i {
   font-size: 25px;
   color: #430036;
 }

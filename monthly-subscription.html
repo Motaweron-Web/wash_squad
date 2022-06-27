@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ar" style="direction: rtl;">
-
 <head>
     <meta charset="utf-8" />
     <title> WashSquad </title>
@@ -32,7 +31,6 @@
     <!-- App Css-->
     <link href="assets/css/app-rtl.min.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body data-sidebar="dark">
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -90,25 +88,25 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> تاريخ الطلب
-                                                        </label>
-                                                        <input class="form-control" type="date" id="default-input"
-                                                            placeholder="Default input">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> وقت الطلب
-                                                        </label>
-                                                        <input class="form-control" type="time" id="default-input"
-                                                            placeholder="43432">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> الفئة </label>
+                                                        <label class="form-label" for="default-input"> اليوم </label>
                                                         <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">الفئة</option>
+                                                            <option value="">اليوم</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="default-input"> فترة الطلب </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value=""> 10:00 am</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="default-input"> وسيلة الدفع</label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value=""> وسيلة الدفع </option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -123,22 +121,33 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> عدد السيارات
-                                                        </label>
-                                                        <div class="number">
-                                                            <span class="minus">-</span>
-                                                            <input class="count" type="text" value="1" />
-                                                            <span class="plus">+</span>
-                                                        </div>
+                                                        <label class="form-label" for="default-input"> الفئة </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">الفئة</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> نوع الخدمة
+                                                        <label class="form-label" for="default-input"> نوع الباقة
                                                         </label>
                                                         <select class="form-select mo-form-select" name="" id="">
                                                             <option value="">غسيل</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="default-input"> لوحة السيارة </label>
+                                                        <input class="form-control" type="number" id="default-input"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="default-input"> الاجمالي </label>
+                                                        <input class="form-control" type="number" id="default-input"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,12 +155,9 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer ">
-                                    <div class="w-100 d-flex justify-content-between">
-                                        <div class="">
-                                            <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal">
-                                                إلغاء </button>
-                                            <button type="button" class="btn stoped "> أضف </button>
-                                        </div>
+                                    <div class="w-100 d-flex justify-content-end">
+                                            <button type="button" class="btn orangeBtn px-5 "> أضف </button>
+                                            <button type="button" class="btn mainBtn px-5  mx-2" data-bs-dismiss="modal"> إلغاء </button>
                                     </div>
                                 </div>
                             </div><!-- /.modal-content -->
@@ -166,6 +172,12 @@
                             </button>
                         </div>
                         <div class="d-flex flex-wrap justify-content-end align-items-center mb-3">
+                            <div class="p-2">
+                                <a href="daily_orders.html" class="btn stoped orangeBtn">
+                                    عدد الطلبات اليومية
+                                    <i class="fas fa-plus ms-2"></i>
+                                </a>
+                            </div>
                             <div class="p-2">
                                 <select class="form-select shadow-lg">
                                     <option selected> January </option>
@@ -189,7 +201,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -200,7 +215,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -211,7 +229,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -222,7 +243,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -233,7 +257,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -244,7 +271,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -255,7 +285,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -266,7 +299,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -277,7 +313,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -288,7 +327,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -299,7 +341,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -310,7 +355,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -321,7 +369,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -332,7 +383,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -343,7 +397,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -354,7 +411,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -365,7 +425,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -376,7 +439,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -387,7 +453,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -398,7 +467,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -409,7 +481,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -420,7 +495,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -431,7 +509,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -442,7 +523,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -453,7 +537,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -464,7 +551,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -475,7 +565,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -486,7 +579,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -497,7 +593,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -508,7 +607,10 @@
                         <div id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal"
                             class=" p-1 p-xl-2">
                             <div class="day-div p-2">
-                                <div class=" p-2 pb-4 ">1</div>
+                                <div class=" p-2 pb-4 d-flex justify-content-between align-items-center ">
+                                    <span> 1 </span>
+                                    <span class="ordersCount"> 19  </span>
+                                </div>
                                 <div class="todo-func ">
                                     <span class="month"> 5 </span>
                                     <p class="mb-0"> إشتراك </p>
@@ -519,8 +621,8 @@
                     </div>
                     <!-- table -->
                     <div class="table-rep-plugin">
-                        <div class="table-responsive mb-0 rounded" data-pattern="priority-columns">
-                            <table id="datatable-buttons" class="table dt-responsive nowrap">
+                        <div class="table-responsive mb-0 rounded bg-white" data-pattern="priority-columns">
+                            <table id="datatable" class="table dt-responsive table-striped nowrap">
                                 <thead>
                                     <tr>
                                         <th> رقم الطلب </th>
@@ -542,7 +644,49 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="blu big-border-p text-white">
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> 06:00 </td>
+                                        <td> wash </td>
+                                        <td> 2 </td>
+                                        <td> غسيل </td>
+                                        <td> اشتراك </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> الروضة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td> <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                style="cursor: pointer;"> <i class="fas fa-map-marker-alt"></i> </a>
+                                        </td>
+                                        <td> <a href=""> <i class="fas fa-file-pdf"></i> </a> </td>
+                                        <td> <a class="sub-details" href="" data-bs-toggle="modal"
+                                                data-bs-target="#subsc-detail"> تفاصيل الإشتراك </a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 10872 </td>
+                                        <td> 2021/07/13 </td>
+                                        <td> 06:00 </td>
+                                        <td> wash </td>
+                                        <td> 2 </td>
+                                        <td> غسيل </td>
+                                        <td> اشتراك </td>
+                                        <td> تلميع مكينة </td>
+                                        <td> الروضة </td>
+                                        <td> محمد </td>
+                                        <td> 0586877977 </td>
+                                        <td> مازدا </td>
+                                        <td> 250SR </td>
+                                        <td> <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                style="cursor: pointer;"> <i class="fas fa-map-marker-alt"></i> </a>
+                                        </td>
+                                        <td> <a href=""> <i class="fas fa-file-pdf"></i> </a> </td>
+                                        <td> <a class="sub-details" href="" data-bs-toggle="modal"
+                                                data-bs-target="#subsc-detail"> تفاصيل الإشتراك </a> </td>
+                                    </tr>
+                                    <tr>
                                         <td> 10872 </td>
                                         <td> 2021/07/13 </td>
                                         <td> 06:00 </td>
@@ -573,7 +717,6 @@
                         <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header py-3 px-4">
-                                    <!-- <h5 class="modal-title" id="modal-title"> إضافة  </h5> -->
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -633,7 +776,7 @@
                                                         <td>الغسلة 1</td>
                                                         <td>02/8/2021</td>
                                                         <td>الاثنين / 5 مساءً</td>
-                                                        <td> <i class="fas fa-check-circle pe-1"></i> تمت الخدمة </td>
+                                                        <td> مجدولة </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -641,8 +784,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <div class="w-100 d-flex justify-content-between">
-                                        <button type="button" class="btn stoped "> أضف </button>
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button type="button" class="btn stoped "> طلب تأجيل موعد </button>
                                         <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal"> إلغاء
                                         </button>
                                     </div>
@@ -761,5 +904,4 @@
             $('#MainSidebar').load('sidebar.html');
         </script>
 </body>
-
 </html>
