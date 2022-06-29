@@ -47,234 +47,204 @@
             <div class="page-content orders-table operation">
                 <div class="container-fluid">
                     <!-- modal -->
-                    <div class="modal fade" id="order-modal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog"
+                        aria-labelledby="orderModalTitle" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-header py-3 px-4">
-                                    <h5 class="modal-title" id="modal-title">عدد الطلبات اليومية</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
                                 <div class="modal-body">
-                                    <div class="mod-content">
+                                    <h3 style="color: #7D349D  ; text-align: center;">توزيع الطلبات اليومية </h3>
+                                    <div class="mod-content d-block mt-3">
                                         <form action="">
-                                            <div class="row pt-4">
+                                            <div class="row pt-3">
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label" for="default-input"> إختر اليوم
                                                         </label>
-                                                        <input class="form-control" type="date" id="default-input"
-                                                            placeholder="بكري">
+                                                        <input class="form-control" type="date" id="default-input">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> ساعات العمل من
-                                                        </label>
-                                                        <input class="form-control" type="time" id="default-input"
-                                                            placeholder="213243">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 p-2">
+                                                    <p class="form-label"> مواقع التغطية </p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <p class="form-label"> عدد السيارات</p>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <p class="form-label"> اختر السائق </p>
+                                                </div>
+                                            </div>
+                                            <!-- location -->
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 p-2">
+                                                    <div
+                                                        class="d-flex p-1 px-3 justify-content-between align-items-center mo-form-select">
+                                                        <p class="mb-0"> وسط الرياض </p>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckDefault">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> إلى </label>
-                                                        <input class="form-control" type="time" id="default-input"
-                                                            placeholder="213243">
+                                                <div class="col-md-3 p-2">
+                                                    <div class="number">
+                                                        <span class="minus">-</span>
+                                                        <input class="count" type="text" value="1" />
+                                                        <span class="plus">+</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 row">
-                                                    <div class="col-md-6">
-                                                        <p class="form-label" for="default-input"> مواقع التغطية
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex justify-content-between">
-                                                        <p class="form-label" style="font-size: 11px;"
-                                                            for="default-input"> طلبات التعقيم
-                                                        </p>
-                                                        <p class="form-label" style="font-size: 11px;"
-                                                            for="default-input"> طلبات التعقيم
-                                                        </p>
-                                                        <p class="form-label" style="font-size: 11px;"
-                                                            for="default-input"> طلبات التعقيم
-                                                        </p>
-                                                        <p class="form-label" style="font-size: 11px;"
-                                                            for="default-input"> طلبات التعقيم
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row col-md-12 mb-2 d-flex justify-content-center">
-                                                    <div class="col-md-6 ">
-                                                        <div class="mb-3 ">
-                                                            <div
-                                                                class="d-flex p-1 rounded justify-content-between align-items-center mo-form-select">
-                                                                <p class="mb-0"> وسط الرياض </p>
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="flexSwitchCheckDefault">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 row ">
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
+                                                <div class="col-md-5 p-2">
+                                                    <div class="times  p-0">
+                                                        <!-- driver -->
+                                                        <div id="driver" class="driver days flex-wrap m-0">
+                                                            <select class="form-select">
+                                                                <option selected> 94849 </option>
+                                                                <option value="1"> 52166 </option>
+                                                                <option value="2"> 8497 </option>
+                                                            </select>
+                                                            <div id="addDriver" class="add">
+                                                                <i class="fas fa-plus-circle"></i>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row col-md-12 mb-2 d-flex justify-content-center">
-                                                    <div class="col-md-6 ">
-                                                        <div class="mb-3 ">
-                                                            <div
-                                                                class="d-flex p-1 rounded justify-content-between align-items-center mo-form-select">
-                                                                <p class="mb-0"> وسط الرياض </p>
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="flexSwitchCheckDefault">
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                            <!-- location -->
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 p-2">
+                                                    <div
+                                                        class="d-flex p-1 px-3 justify-content-between align-items-center mo-form-select">
+                                                        <p class="mb-0"> وسط الرياض </p>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6 row ">
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <div class="number">
+                                                        <span class="minus">-</span>
+                                                        <input class="count" type="text" value="1" />
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <div class="times  p-0">
+                                                        <!-- driver -->
+                                                        <div id="driver" class="driver days flex-wrap m-0">
+                                                            <select class="form-select">
+                                                                <option selected> 94849 </option>
+                                                                <option value="1"> 52166 </option>
+                                                                <option value="2"> 8497 </option>
+                                                            </select>
+                                                            <div id="addDriver" class="add">
+                                                                <i class="fas fa-plus-circle"></i>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row col-md-12 mb-2 d-flex justify-content-center">
-                                                    <div class="col-md-6 ">
-                                                        <div class="mb-3 ">
-                                                            <div
-                                                                class="d-flex p-1 rounded justify-content-between align-items-center mo-form-select">
-                                                                <p class="mb-0"> وسط الرياض </p>
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="flexSwitchCheckDefault">
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                            <!-- location -->
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 p-2">
+                                                    <div
+                                                        class="d-flex p-1 px-3 justify-content-between align-items-center mo-form-select">
+                                                        <p class="mb-0"> وسط الرياض </p>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6 row ">
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <div class="number">
+                                                        <span class="minus">-</span>
+                                                        <input class="count" type="text" value="1" />
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <div class="times  p-0">
+                                                        <!-- driver -->
+                                                        <div id="driver" class="driver days flex-wrap m-0">
+                                                            <select class="form-select">
+                                                                <option selected> 94849 </option>
+                                                                <option value="1"> 52166 </option>
+                                                                <option value="2"> 8497 </option>
+                                                            </select>
+                                                            <div id="addDriver" class="add">
+                                                                <i class="fas fa-plus-circle"></i>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row col-md-12 mb-2 d-flex justify-content-center">
-                                                    <div class="col-md-6 ">
-                                                        <div class="mb-3 ">
-                                                            <div
-                                                                class="d-flex p-1 rounded justify-content-between align-items-center mo-form-select">
-                                                                <p class="mb-0"> وسط الرياض </p>
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="flexSwitchCheckDefault">
-                                                                </div>
+                                            </div>
+                                            <!-- location -->
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 p-2">
+                                                    <div
+                                                        class="d-flex p-1 px-3 justify-content-between align-items-center mo-form-select">
+                                                        <p class="mb-0"> وسط الرياض </p>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckDefault">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <div class="number">
+                                                        <span class="minus">-</span>
+                                                        <input class="count" type="text" value="1" />
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <div class="times  p-0">
+                                                        <!-- driver -->
+                                                        <div id="driver" class="driver days flex-wrap m-0">
+                                                            <select class="form-select">
+                                                                <option selected> 94849 </option>
+                                                                <option value="1"> 52166 </option>
+                                                                <option value="2"> 8497 </option>
+                                                            </select>
+                                                            <div id="addDriver" class="add">
+                                                                <i class="fas fa-plus-circle"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6 row ">
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
+                                                </div>
+                                            </div>
+                                            <!-- location -->
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 p-2">
+                                                    <div
+                                                        class="d-flex p-1 px-3 justify-content-between align-items-center mo-form-select">
+                                                        <p class="mb-0"> وسط الرياض </p>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-3 col-md-3 d-flex justify-content-center px-1">
-                                                            <div class="number">
-                                                                <span class="minus">-</span>
-                                                                <input class="count" type="text" value="1" />
-                                                                <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <div class="number">
+                                                        <span class="minus">-</span>
+                                                        <input class="count" type="text" value="1" />
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <div class="times  p-0">
+                                                        <!-- driver -->
+                                                        <div id="driver" class="driver days flex-wrap m-0">
+                                                            <select class="form-select">
+                                                                <option selected> 94849 </option>
+                                                                <option value="1"> 52166 </option>
+                                                                <option value="2"> 8497 </option>
+                                                            </select>
+                                                            <div id="addDriver" class="add">
+                                                                <i class="fas fa-plus-circle"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -284,141 +254,10 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer ">
-                                    <div class="w-100 d-flex justify-content-between">
-                                        <div class="">
-                                            <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal">
-                                                إلغاء </button>
-                                            <button type="button" class="btn stoped "> أضف </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div>
-                    <!-- modal -->
-                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="mod-content">
-                                        <form action="">
-                                            <div action="#" class="dropzone">
-                                                <div class="fallback">
-                                                    <input name="file" type="file">
-                                                </div>
-                                                <div class="dz-message needsclick">
-                                                    <div class="">
-                                                        <i class="display-6 fas mo-icon fa-user"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row pt-4">
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> إسم العميل
-                                                        </label>
-                                                        <input class="form-control" type="text" id="default-input"
-                                                            placeholder="بكري">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input">رقم الجوال</label>
-                                                        <input class="form-control" type="number" id="default-input"
-                                                            placeholder="213243">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> الحي </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">الحي</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> تاريخ الطلب
-                                                        </label>
-                                                        <input class="form-control" type="date" id="default-input"
-                                                            placeholder="Default input">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> وقت الطلب
-                                                        </label>
-                                                        <input class="form-control" type="time" id="default-input"
-                                                            placeholder="43432">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> وسيلة الدفع
-                                                        </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">وسيلة الدفع</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> ماركة السيارة
-                                                        </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">دايو</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> الفئة </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">الفئة</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> نوع الخدمة
-                                                        </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">غسيل</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> عدد السيارات
-                                                        </label>
-                                                        <div class="number">
-                                                            <span class="minus">-</span>
-                                                            <input class="count" type="text" value="1" />
-                                                            <span class="plus">+</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="default-input"> المزود
-                                                        </label>
-                                                        <select class="form-select mo-form-select" name="" id="">
-                                                            <option value="">غسيل</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="modal-footer ">
-                                    <div class="w-100 d-flex justify-content-between">
-                                        <div class="">
-                                            <button type="button" class="btn stoped  mx-2" data-bs-dismiss="modal">
-                                                إلغاء </button>
-                                            <button type="button" class="btn stoped "> أضف </button>
-                                        </div>
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button type="button" class="btn orangeBtn px-5 ">  حفظ </button>
+                                        <button type="button" class="btn mainBtn px-5  mx-2" data-bs-dismiss="modal">
+                                            إلغاء </button>
                                     </div>
                                 </div>
                             </div><!-- /.modal-content -->
@@ -447,14 +286,10 @@
                             </select>
                         </div>
                         <div class=" p-1 p-xl-2">
-                            <button class="stoped" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
-                                <i class="fas fa-plus me-2"></i>
-                                إضافة طلب </button>
-                        </div>
-                        <div class=" p-1 p-xl-2">
-                            <button class="daily-order stoped" data-bs-toggle="modal" data-bs-target="#order-modal">
-                                <i class="fas fa-plus me-2"></i>
-                                عدد الطلبات اليومية </button>
+                            <button class=" stoped  orangeBtn" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                توزيع الطلبات اليومية
+                                <i class="fas fa-plus ms-2"></i>
+                            </button>
                         </div>
                     </div>
                     <!-- calender -->
@@ -913,7 +748,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -945,7 +781,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -977,7 +814,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -1009,7 +847,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -1041,7 +880,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -1073,7 +913,8 @@
                                         <td> <a> <i class="fas fa-file-pdf"></i> </a> </td>
                                         <td>
                                             <i class="dripicons-information px-1"></i>
-                                            <i class="far fa-edit px-1"></i>
+                                            <i class="far fa-edit px-1" data-bs-toggle="modal"
+                                                data-bs-target="#editModal"></i>
                                             <i class="far fa-trash-alt text-danger px-1"></i>
                                         </td>
                                     </tr>
@@ -1082,63 +923,190 @@
                         </div>
                     </div>
                     <!-- modal -->
-                    <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-header py-3 px-4">
-                                    <h5 class="modal-title" id="modal-title"> إضافة </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body p-4">
-                                    <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label"> ملاحظة </label>
-                                                    <input class="form-control"  type="text" name="title"
-                                                        id="event-title" required value="">
-                                                    <div class="invalid-feedback">من فضلك أكتب المطلوب
+                                <div class="modal-body">
+                                    <div class="mod-content">
+                                        <form action="">
+                                            <div action="#" class="dropzone">
+                                                <div class="fallback">
+                                                    <input name="file" type="file">
+                                                </div>
+                                                <div class="dz-message needsclick">
+                                                    <div class="">
+                                                        <i class="display-6 fas mo-icon fa-user"></i>
                                                     </div>
                                                 </div>
-                                            </div> <!-- end col-->
-                                            <div class="col-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label"></label>
-                                                    <select class="form-select" name="category" id="event-category">
-                                                        <optionn selected> --Select-- </optionn>
-                                                        <option>gift</option>
-                                                        <option>Monthly subscription </option>
-                                                        <option>Sterilization </option>
-                                                        <option>wash </option>
-                                                        <option>polishing </option>
-                                                    </select>
-                                                    <div class="invalid-feedback">Please select a valid event
-                                                        category</div>
-                                                </div>
-                                            </div> <!-- end col-->
-                                        </div> <!-- end row-->
-                                        <div class="row mt-2">
-                                            <div class="col-6">
-                                                <!-- <button type="button" class="btn btn-danger"
-                                                    id="btn-delete-event">Delete</button> -->
                                             </div>
-                                            <!-- end col-->
-                                            <div class="col-6 text-end">
-                                                <button type="button" class="btn btn-light me-1"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-success">
-                                                    Save
-                                                </button>
-                                            </div> <!-- end col-->
-                                        </div> <!-- end row-->
-                                    </form>
+                                            <div class="row pt-4">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> إسم العميل
+                                                        </label>
+                                                        <input class="form-control" type="text" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">رقم الجوال</label>
+                                                        <input class="form-control" type="number" id=""
+                                                            placeholder="213243">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> الحي </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">الحي</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> تاريخ الطلب
+                                                        </label>
+                                                        <input class="form-control" type="date" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> فترة الطلب
+                                                        </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value=""> 10:00 am </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> وسيلة الدفع
+                                                        </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">وسيلة الدفع</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> ماركة السيارة
+                                                        </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">دايو</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> الفئة </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">الفئة</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> نوع الخدمة
+                                                        </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value="">غسيل</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> عدد السيارات
+                                                        </label>
+                                                        <div class="number">
+                                                            <span class="minus">-</span>
+                                                            <input class="count" type="text" value="1" />
+                                                            <span class="plus">+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=""> التطبيق/المسوق
+                                                        </label>
+                                                        <select class="form-select mo-form-select" name="" id="">
+                                                            <option value=""> ووش </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">لوحة السيارة
+                                                        </label>
+                                                        <input class="form-control" type="text" id=""
+                                                            placeholder=" 0000-aaa ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">الاجمالي
+                                                        </label>
+                                                        <input class="form-control" type="text" id="" placeholder="  ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label"> الخدمات الاضافية </label>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="service1">
+                                                        <label class="form-check-label" for="service1">
+                                                            تلميع مكينة
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="service2">
+                                                        <label class="form-check-label" for="service2">
+                                                            تلميع جنوط
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="service3">
+                                                        <label class="form-check-label" for="service3">
+                                                            تعطير السيارة
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="service4">
+                                                        <label class="form-check-label" for="service4">
+                                                            تلبيس الدعسات
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="service5">
+                                                        <label class="form-check-label" for="service5">
+                                                            تلميع كرسي أطفال
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">ملاحظات
+                                                        </label>
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- end modal-content-->
-                        </div>
-                        <!-- end modal dialog-->
+                                <div class="modal-footer ">
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button type="button" class="btn orangeBtn px-5 "> أضف </button>
+                                        <button type="button" class="btn mainBtn px-5  mx-2" data-bs-dismiss="modal">
+                                            إلغاء </button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
                     </div>
                 </div>
             </div>
@@ -1188,6 +1156,19 @@
         <script>
             $('#MainHeader').load('header.html');
             $('#MainSidebar').load('sidebar.html');
+        </script>
+        <script>
+            // add new select driver
+            $(document).ready(function () {
+                $('#addDriver').on('click', function () {
+                    var driverSelect = `   <select class="form-select">
+                                                <option selected> 94849 </option>
+                                                <option value="1"> 52166 </option>
+                                                <option value="2"> 8497 </option>
+                                            </select> ` ;
+                    $("#driver").prepend(driverSelect);
+                });
+            });
         </script>
 </body>
 

@@ -2287,7 +2287,8 @@ input.spectrum.with-add-on {
 }
 
 .orders-table .mo-form-select {
-  border: 1px solid #3F0033;
+  border: 1px solid #eee;
+  border-radius: 100px;
 }
 
 .sent-service .minus,
@@ -5940,5 +5941,120 @@ tbody .gift {
 .blockModal {
   text-align: center;
   padding: 40px 0;
+}
+
+.timesAvailable {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 8px #00000030;
+          box-shadow: 0px 4px 8px #00000030;
+}
+
+.timesAvailable p {
+  margin: 0;
+}
+
+.timesAvailable td {
+  padding: 5px;
+}
+
+.timesAvailable .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timesAvailable .time i {
+  color: #7D349D;
+  margin-right: 8px;
+}
+
+.timesAvailable .area {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.timesAvailable .serviceTime {
+  padding: 15px 10px;
+  border-radius: 16px;
+  background-color: #7D349D;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.timesAvailable .serviceTime .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timesAvailable .serviceTime .services .service {
+  margin: 2px;
+  text-align: center;
+}
+
+.timesAvailable .serviceTime .services .service .count {
+  min-width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #7D349D;
+  margin-bottom: 5px;
+}
+
+.timesAvailable .serviceTime .event i {
+  font-size: 24px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.timesAvailable .serviceTime.wait {
+  background-color: #E2E2E2;
+}
+
+.timesAvailable .serviceTime.wait .service .count {
+  color: #CBAED8;
+}
+
+.timesAvailable .serviceTime.wait .waitService {
+  color: #D64141;
+}
+
+.timesAvailable .serviceTime.wait .waitService .count {
+  background-color: #D64141;
+  color: #fff;
+}
+
+.timesAvailable .serviceTime.wait .event i {
+  color: #D64141;
 }
 /*# sourceMappingURL=app-rtl.min.css.map */
