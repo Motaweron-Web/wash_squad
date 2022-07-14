@@ -75,7 +75,7 @@
                     <div class="gps">
                         <h4 class="operation-head"> GPS </h4>
                         <!-- map -->
-                        <div id="map" style="height: 400px;"></div>
+                        <div id="operationMap" style="height: 400px;"></div>
                         <!-- end map -->
 
                     </div>
@@ -1086,7 +1086,7 @@
             // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
             // to the base of the flagpole.
             function initMap() {
-                const map = new google.maps.Map(document.getElementById("map"), {
+                const map = new google.maps.Map(document.getElementById("operationMap"), {
                     zoom: 10,
                     center: { lat: -33.9, lng: 151.2 },
                 });
